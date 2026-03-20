@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Google Pixel Buds Pro product page example with gallery, color options, and cart interaction." />
+    <title>Google Pixel Buds Pro - Google Store</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="header__left">
+        <img src="images/google-logo.png" alt="Google" class="header__logo" />
+        <nav aria-label="Main navigation">
+          <ul>
+            <li><a href="#">Phones</a></li>
+            <li><a href="#" class="active" aria-current="page">Earbuds</a></li>
+            <li><a href="#">Watches</a></li>
+            <li><a href="#">Smart Home</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Subscriptions</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__right">
+        <img src="images/icons/Search-Lupa.svg" alt="Buscar" class="header__icon" />
+        <img
+          src="images/icons/Help-Intrrogación.svg"
+          alt="Ayuda"
+          class="header__icon"
+        />
+        <img
+          src="images/icons/Cart-Carrito.svg"
+          alt="Carrito"
+          class="header__icon"
+        />
+        <img src="images/icons/Avatar-foto.svg" alt="Cuenta" class="header__icon" />
+      </div>
+    </header>
+
+    <a class="back-link" href="#" aria-label="Go back to product list">
+      <img class="icon" src="./images/icons/Arrow-Flecha.svg" alt="Back" />
+      See product details
+    </a>
+
+    <main>
+      <div class="product">
+        <div class="product__gallery">
+          <div class="product__thumbnails">
+          <img
+            src="./images/earbuds/earbuds_01.png"
+            class="product__thumb product__thumb--active"
+            data-image="./images/earbuds/earbuds_01.png"
+            alt="Google Pixel Buds Pro - view 1"
+          />
+          <img
+            src="./images/earbuds/earbuds_02.png"
+            class="product__thumb"
+            data-image="./images/earbuds/earbuds_02.png"
+            alt="Google Pixel Buds Pro - view 2"
+          />
+          <img
+            src="./images/earbuds/earbuds_03.png"
+            class="product__thumb"
+            data-image="./images/earbuds/earbuds_03.png"
+            alt="Google Pixel Buds Pro - view 3"
+          />
+          <img
+            src="./images/earbuds/earbuds_04.png"
+            class="product__thumb"
+            data-image="./images/earbuds/earbuds_04.png"
+            alt="Google Pixel Buds Pro - view 4"
+          />
+        </div>
+
+        <div class="product__image">
+          <img
+            id="mainProductImage"
+            src="./images/earbuds/earbuds_01.png"
+            alt="Google Pixel Buds Pro main view"
+          />
+        </div>
+      </div>
+
+      <div class="product__info">
+        <h1 class="product__title">Google Pixel Buds Pro</h1>
+        <p class="product__category">Music &amp; Sound</p>
+        <p class="product__price">229 €</p>
+        <hr class="product__divider" />
+        <div>
+          <p class="color-label">Choose a color</p>
+          <div class="color-swatches">
+            <button type="button" class="swatch sky selected" aria-label="Color Sky"></button>
+            <button type="button" class="swatch cream" aria-label="Color Cream"></button>
+            <button type="button" class="swatch dark" aria-label="Color Dark"></button>
+            <button type="button" class="swatch sage" aria-label="Color Sage"></button>
+            <button type="button" class="swatch mint" aria-label="Color Mint"></button>
+            <button type="button" class="swatch coral" aria-label="Color Coral"></button>
+          </div>
+        </div>
+        <div class="purchase-card">
+          <p class="price-large">229 €</p>
+          <div class="cart-row">
+            <div class="qty-box" aria-label="Quantity selector">
+              <select id="qty" aria-label="Quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <button type="button" id="addToCart" class="btn-cart">Add to Cart</button>
+          </div>
+          <p class="delivery-info">
+            🚚 Delivers 29 Apr to <a href="#">08023</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__social">
+                <a href="https://x.com" aria-label="Visitar X (anteriormente Twitter)">
+                    <img src="images/icons/SM-x.svg" alt="Ícono de X" />
+                </a>
+                <a href="https://instagram.com" aria-label="Visitar Instagram">
+                    <img src="images/icons/SM-instagram.svg" alt="Ícono de Instagram" />
+                </a>
+                <a href="https://facebook.com" aria-label="Visitar Facebook">
+                    <img src="images/icons/SM-facebook.svg" alt="Ícono de Facebook" />
+                </a>
+                <a href="https://youtube.com" aria-label="Visitar YouTube">
+                    <img src="images/icons/SM-youtube.svg" alt="Ícono de YouTube" />
+                </a>
+                <a href="https://tiktok.com" aria-label="Visitar TikTok">
+                    <img src="images/icons/SM-tiktok.svg" alt="Ícono de TikTok" />
+                </a>
+            </div>
+
+            <span class="footer__country">
+                <img src="https://flagcdn.com/es.svg" alt="Bandera de España" width="20" height="14" />
+                Spain
+            </span>
+
+            <nav class="footer__nav">
+                <a href="/privacy">Privacy</a>
+                <a href="/nest-privacy">Google Nest Commitment to Privacy</a>
+                <a href="/sales-terms">Sales Terms</a>
+                <a href="/terms">Terms of Service</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
